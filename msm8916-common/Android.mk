@@ -65,22 +65,13 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyService
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := shutdownlistener
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -91,40 +82,8 @@ LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := CNEService
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.qualcomm.location
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := dpmserviceapp
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -134,25 +93,50 @@ LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTetherService
+LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/priv-app/QtiTetherService/QtiTetherService.apk
+LOCAL_SRC_FILES := proprietary/vendor/app/ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imssettings
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/vendor/app/imssettings/imssettings.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imscmlibrary
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/imscmlibrary.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcnvitems
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/framework/qcnvitems.jar
+LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
@@ -162,6 +146,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
+LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar

@@ -17,11 +17,12 @@
 PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/asus/msm8916-common/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/asus/msm8916-common/proprietary/bin/cnd:system/bin/cnd \
-    vendor/asus/msm8916-common/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/asus/msm8916-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/asus/msm8916-common/proprietary/bin/imscmservice:system/bin/imscmservice \
+    vendor/asus/msm8916-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    vendor/asus/msm8916-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/asus/msm8916-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/asus/msm8916-common/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/asus/msm8916-common/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/asus/msm8916-common/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/asus/msm8916-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/asus/msm8916-common/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -82,13 +83,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:system/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/asus/msm8916-common/proprietary/etc/acdbdata/QRD/QRD_Headset_cal.acdb:system/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/asus/msm8916-common/proprietary/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:system/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
-    vendor/asus/msm8916-common/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    vendor/asus/msm8916-common/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/asus/msm8916-common/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/asus/msm8916-common/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/asus/msm8916-common/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
-    vendor/asus/msm8916-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/asus/msm8916-common/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/asus/msm8916-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/asus/msm8916-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/asus/msm8916-common/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
@@ -98,25 +95,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/asus/msm8916-common/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/asus/msm8916-common/proprietary/etc/gallery_arcsoft_config.cng:system/etc/gallery_arcsoft_config.cng \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/asus/msm8916-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/asus/msm8916-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/asus/msm8916-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/asus/msm8916-common/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml \
+    vendor/asus/msm8916-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/asus/msm8916-common/proprietary/etc/Tfa9887.cnt:system/etc/Tfa9887.cnt \
-    vendor/asus/msm8916-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/asus/msm8916-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/asus/msm8916-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
-    vendor/asus/msm8916-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/asus/msm8916-common/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/asus/msm8916-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/asus/msm8916-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/asus/msm8916-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/asus/msm8916-common/proprietary/lib64/hw/sensors.msm8916.so:system/lib64/hw/sensors.msm8916.so \
     vendor/asus/msm8916-common/proprietary/lib64/libinvensense_hal.so:system/lib64/libinvensense_hal.so \
     vendor/asus/msm8916-common/proprietary/lib64/libmllite.so:system/lib64/libmllite.so \
@@ -166,71 +149,51 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so \
     vendor/asus/msm8916-common/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so \
     vendor/asus/msm8916-common/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so \
-    vendor/asus/msm8916-common/proprietary/lib/soundfx/libicepower.so:system/lib/soundfx/libicepower.so \
     vendor/asus/msm8916-common/proprietary/lib/style.cng:system/lib/style.cng \
     vendor/asus/msm8916-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/asus/msm8916-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/asus/msm8916-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libESXEGL_adreno.so:system/vendor/lib64/egl/libESXEGL_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib64/egl/libESXGLESv1_CM_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libESXGLESv2_adreno.so:system/vendor/lib64/egl/libESXGLESv2_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libRBEGL_adreno.so:system/vendor/lib64/egl/libRBEGL_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib64/egl/libRBGLESv1_CM_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:system/vendor/lib64/egl/libRBGLESv2_adreno.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
@@ -245,41 +208,26 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libsc-a3xx.so:system/vendor/lib64/libsc-a3xx.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libESXEGL_adreno.so:system/vendor/lib/egl/libESXEGL_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib/egl/libESXGLESv1_CM_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libESXGLESv2_adreno.so:system/vendor/lib/egl/libESXGLESv2_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8916.so:system/vendor/lib/hw/sound_trigger.primary.msm8916.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
@@ -316,13 +264,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camera.so:system/vendor/lib/libactuator_rohm_bu64243gwz_camera.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libchromatix_mn34150_asus_common.so:system/vendor/lib/libchromatix_mn34150_asus_common.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_binning.so:system/vendor/lib/libchromatix_mn34150_asus_preview_binning.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_full.so:system/vendor/lib/libchromatix_mn34150_asus_preview_full.so \
@@ -355,33 +298,19 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libchromatix_t4k37r_asus_common.so:system/vendor/lib/libchromatix_t4k37r_asus_common.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libchromatix_t4k37r_asus_preview_full.so:system/vendor/lib/libchromatix_t4k37r_asus_preview_full.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libchromatix_t4k37r_asus_preview_video.so:system/vendor/lib/libchromatix_t4k37r_asus_preview_video.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
@@ -414,12 +343,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -433,27 +360,17 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:system/vendor/lib/libxditk_DIT_MSM8916.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:system/vendor/lib/libxditk_DIT_Qualcomm.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:system/vendor/lib/libxditk_mmcamera2_stats_algorithm.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_Network.so:system/vendor/lib/libxditk_Network.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
@@ -464,13 +381,13 @@ PRODUCT_PACKAGES += \
     libloc_ds_api \
     libmm-abl \
     libtime_genoff \
-    QtiTelephonyService \
     shutdownlistener \
     TimeService \
-    CNEService \
-    com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
-    QtiTetherService \
+    ims \
+    imssettings \
+    imscmlibrary \
     qcnvitems \
     qcrilhook
+
+$(call inherit-product, vendor/qcom/binaries/msm8916/graphics/graphics-vendor.mk)
